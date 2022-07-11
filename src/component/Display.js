@@ -7,13 +7,14 @@ import profile2 from "../Assets/profile-images/Ellipse -3.png";
 import profile3 from "../Assets/profile-images/Ellipse -7.png";
 import profile4 from "../Assets/profile-images/Ellipse -8.png";
 import EmployeeService from "../Service/EmployeeService";
+import { useNavigate } from "react-router-dom";
 
 
 const Display = (props) => {
- 
+  let navigate = useNavigate();
   const update = (employeeId) => {
     
-    props.history.push(`Employeeform/${employeeId}`);
+   navigate(`/Employeeform/${employeeId}`);
      
   };
 

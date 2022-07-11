@@ -53,7 +53,7 @@ const Employeeform = (props) => {
         if (params.id) {
           getDataById(params.id);
         }
-      });
+      }, [params.id]);
 
       const getDataById = (id) => {
         EmployeeService

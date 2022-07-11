@@ -16,7 +16,7 @@ class EmployeeService {
     return axios.get(`${this.baseUrl}/get/${employee_id}`);
   }
 
-  updateEmployee(data, employee_id) {
+  updateEmployee(employee_id, data) {
     return axios.put(`${this.baseUrl}/update/${employee_id}`, data);
   }
   
